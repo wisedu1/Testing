@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # type hints 类型提示
+
+
 class Calc:
 
     def add(self, a: int, b: int):
