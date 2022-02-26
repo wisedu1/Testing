@@ -15,6 +15,7 @@ def steps():
     with open("datas/steps.yml") as f:
         return yaml.safe_load(f)
 
+
 class TestCalc:
     def setup(self):
         self.calc = Calc()
@@ -40,9 +41,6 @@ class TestCalc:
             print(result)
             assert expect == result
 
-
-
-
         # result = self.calc.add(data1, data2)
         # print(result)
         # assert expect == result
@@ -57,7 +55,8 @@ class TestCalc:
         result = self.calc.div(2, 2)
         assert 1 == result
 
+
 # pytest.main(['-vs','test_pytest.py::TestCalc::test_div'])
 
 # if __name__ == '__main__':
-#     pytest.main(['-vs','test_pytest.py::TestCalc::test_div'])
+#     pytest.main(['-vs', 'test_pytest.py::TestCalc::test_div'])
