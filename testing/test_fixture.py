@@ -5,7 +5,7 @@ import pytest
 
 @pytest.fixture()
 def login():
-    print("需要登录")
+    print("\n需要登录")
     username = "tom"
     yield username
     print("teardown ")
@@ -31,17 +31,17 @@ class TestDemo:
     #     # pass
 
     def test_a(self,login):
-        print(f"testa ==== {login}")
+        print(f"\ntesta ==== {login}")
         # 第二步，输入网址
         # 第三步，定位
         # 第四步，各种操作
         pass
 
     def test_b(self):
-        print("testb")
+        print("\ntestb")
         pass
 
     def test_c(self,login):
-        print("testc")
+        print("\ntestc")
         pass
 
